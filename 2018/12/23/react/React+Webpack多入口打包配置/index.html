@@ -83,11 +83,11 @@
 <meta name="keywords" content="React,Webpack">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React + Webpack多入口打包配置（一）基础配置快速打包，优化打包速度">
-<meta property="og:url" content="http://yoursite.com/2018/12/23/react_01/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/12/23/react/React+Webpack多入口打包配置/index.html">
 <meta property="og:site_name" content="朱建伟的博客">
 <meta property="og:description" content="1. 安装编译插件编译 jsx、es6、scss 等资源  ● 使用 bael 和 babel-loader 编译 jsx、es6  ● 安装插件: babel-preset-es2015 用于解析 es6  ● 安装插件：babel-preset-react 用于解析 jsx 安装插件1234$ npm i --save-dev babel-core babel-loader babel-pre">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-25T01:08:33.777Z">
+<meta property="og:updated_time" content="2018-12-26T14:56:52.715Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React + Webpack多入口打包配置（一）基础配置快速打包，优化打包速度">
 <meta name="twitter:description" content="1. 安装编译插件编译 jsx、es6、scss 等资源  ● 使用 bael 和 babel-loader 编译 jsx、es6  ● 安装插件: babel-preset-es2015 用于解析 es6  ● 安装插件：babel-preset-react 用于解析 jsx 安装插件1234$ npm i --save-dev babel-core babel-loader babel-pre">
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/23/react_01/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/23/react/React+Webpack多入口打包配置/">
 
 
 
@@ -305,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/23/react_01/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/23/react/React+Webpack多入口打包配置/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="朱建伟">
@@ -374,7 +374,7 @@
 
           
           
-             <span id="/2018/12/23/react_01/" class="leancloud_visitors" data-flag-title="React + Webpack多入口打包配置（一）基础配置快速打包，优化打包速度">
+             <span id="/2018/12/23/react/React+Webpack多入口打包配置/" class="leancloud_visitors" data-flag-title="React + Webpack多入口打包配置（一）基础配置快速打包，优化打包速度">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -427,7 +427,7 @@
 <h4 id="3-5-将执行脚本配置到package-json"><a href="#3-5-将执行脚本配置到package-json" class="headerlink" title="3.5.  将执行脚本配置到package.json"></a>3.5.  将执行脚本配置到package.json</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;start&quot;: &quot;nodemon ./bin/www&quot;,</span><br><span class="line">    &quot;build&quot;: &quot;webpack --progress --config ./webpack/build/webpack.config.js&quot;,</span><br><span class="line">    &quot;build-dev&quot;: &quot;webpack --progress --watch --config ./webpack/build/webpack.dev.config.js&quot;,</span><br><span class="line">    &quot;build-dev-server&quot;: &quot;webpack-dev-server --progress --config ./webpack/build/webpack.dev.server.config.js&quot;,</span><br><span class="line">    &quot;build-dll&quot;: &quot;webpack --progress --config ./webpack/build/webpack.dll.config.js&quot;,</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
 <p>后续可以使用以下命令完成打包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm run build-dll  // 打包公共代码</span><br><span class="line">npm run build      // 生产环境打包</span><br><span class="line">npm run build-dev  // 测试环境打包</span><br><span class="line">npm run build-dev-server  // 开发环境打包</span><br></pre></td></tr></table></figure></p>
 <p>开发调试时设置devtool: ‘eval’, // eval source-map， 不压缩代码， 提高打包速度。</p>
-<p>###未完，待续……</p>
+<p>###未完，待续…</p>
 
       
     </div>
